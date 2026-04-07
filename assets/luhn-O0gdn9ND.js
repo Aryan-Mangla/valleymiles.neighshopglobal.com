@@ -1,0 +1,1 @@
+function s(f){const e=String(f||"").replace(/\D/g,"");if(e.length<13||e.length>19)return!1;let r=0,l=!1;for(let n=e.length-1;n>=0;n-=1){let t=parseInt(e[n],10);l&&(t*=2,t>9&&(t-=9)),r+=t,l=!l}return r%10===0}export{s as l};
